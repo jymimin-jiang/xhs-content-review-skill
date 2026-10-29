@@ -1,0 +1,32 @@
+{
+  "demo": true,
+  "title": "语境排除与未提供图片 · 本地复核样例",
+  "report_id": "CHECK-CONTEXT-001",
+  "date": "2026-10-29",
+  "scenario": "个人文字分享；未提交图片",
+  "materials": [
+    {
+      "id": "T01",
+      "type": "text",
+      "label": "标题",
+      "location": "笔记标题",
+      "text": "最近一次记录",
+      "status": "read"
+    },
+    {
+      "id": "B01",
+      "type": "text",
+      "label": "正文第1段",
+      "location": "笔记正文",
+      "text": "不要加入赌博群，更不要跟着下注赚钱。个人就诊经历中的治疗不是产品推荐。",
+      "status": "read"
+    }
+  ],
+  "issues": [],
+  "pending": [
+    "未提交图片，图片OCR及画面均未检查。"
+  ],
+  "excluded": "反赌语句为劝阻，不是招揽；最近一次不构成优越性承诺；治疗出现在个人经历语境中，不仅凭词命中认定医疗推广。",
+  "advice": "不建议为保证过审将治疗机械替换为调理；没有过审保证。",
+  "content_title": "个人经历图文"
+}

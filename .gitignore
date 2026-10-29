@@ -1,0 +1,20 @@
+# Python and OS caches
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+
+# Local installation and user content
+**/installation.json
+.xhs-content-review/
+user-data/
+reports/
+backups/
+*.log
+.env
+.env.*
+
+# Built artifacts: distribute via release assets
+*.zip
+*.zip.sha256
+文件校验清单.json

@@ -1,0 +1,94 @@
+{
+  "demo": true,
+  "title": "图文自查报告 · 验证样例",
+  "report_id": "DEMO-001",
+  "date": "2026-10-29",
+  "scenario": "商业广告（虚构场景）",
+  "materials": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "标题",
+      "location": "标题",
+      "text": "最近一次记录",
+      "status": "read"
+    },
+    {
+      "id": "body1",
+      "type": "text",
+      "label": "正文第1段",
+      "location": "正文第1段",
+      "text": "加入赌博群，跟着下注赚钱。",
+      "status": "read"
+    },
+    {
+      "id": "img1",
+      "type": "image_ocr",
+      "label": "图片01（封面）",
+      "location": "示例图片下方宣传语",
+      "text": "加微信领取完整清单",
+      "status": "partial"
+    }
+  ],
+  "issues": [
+    {
+      "id": "R01",
+      "title": "招揽参与赌博",
+      "level": "必须禁用",
+      "action": "建议删除",
+      "reason": "虚构示例以加入群组和下注赚钱招揽赌博，不是反赌引用或劝阻。依据现有社区规范禁止赌博信息的条款，建议删除。",
+      "evidence": [
+        {
+          "material_id": "body1",
+          "quote": "加入赌博群，跟着下注赚钱",
+          "location": "正文第1段"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "platform",
+          "id": "XHS-COMM-2.3.2",
+          "title": "社区规范",
+          "location": "2.3.2",
+          "excerpt": "禁止发布欺诈或赌博信息",
+          "status": "用户复制正文，现行版本未独立核验"
+        }
+      ],
+      "suggestion": "删除招揽赌博和下注引导，不提供隐晦替换。",
+      "conditions": "本示例已明确为招揽语境；实际审核仍须结合上下文。"
+    },
+    {
+      "id": "R02",
+      "title": "外部领取引导",
+      "level": "高危",
+      "action": "建议改写",
+      "reason": "在商业广告示例中要求读者加微信领取资源，存在外部转移引导。未读取任何二维码目标，不推断具体账号。",
+      "evidence": [
+        {
+          "material_id": "img1",
+          "quote": "加微信领取完整清单",
+          "location": "图片01下方"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "platform",
+          "id": "XHS-AD-EX-005-05",
+          "title": "商业广告截图整理",
+          "location": "截图03，第二章第1组⑤",
+          "excerpt": "其他引导用户前往第三方平台的内容。",
+          "status": "用户提供截图，来源身份和版本未独立核验"
+        }
+      ],
+      "suggestion": "如已将清单放入本篇配图，可改为“清单见本篇配图”；否则删除原引导。",
+      "conditions": "必须先补入实际清单并审核；未补入时不得声称清单已提供。"
+    }
+  ],
+  "pending": [
+    "图片01底部小字未提供，未检查。"
+  ],
+  "excluded": "标题‘最近一次’不是绝对化宣传，未因最、一命中判风险。",
+  "advice": "本例未评估账号定位。",
+  "ad_scope": "confirmed",
+  "content_title": "服装推广图文"
+}

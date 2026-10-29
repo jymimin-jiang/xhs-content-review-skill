@@ -1,0 +1,6 @@
+interface:
+  display_name: "小红书图文自查"
+  short_description: "结合行业与上下文检查小红书图文，生成含来源与修改建议的标红报告"
+  default_prompt: "请使用 $xhs-content-review 检查我提交的小红书图文并生成HTML报告。"
+policy:
+  allow_implicit_invocation: false

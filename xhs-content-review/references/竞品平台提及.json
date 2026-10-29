@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "role": "语义召回线索；不是自动判罚或替换表",
+  "platforms": [
+    {
+      "id": "XHS-AUTHOR-PLATFORM-DOUYIN",
+      "platform": "抖音",
+      "direct_names": [
+        "抖音"
+      ],
+      "alias_candidates": [
+        "橙色软件",
+        "橙V"
+      ],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "用户提供的两种称呼指代不稳定，不能预设其一定指向抖音；缺少其他证据时保持目标不明。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-WECHAT",
+      "platform": "微信",
+      "direct_names": [
+        "微信"
+      ],
+      "alias_candidates": [],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "平台名不等于微信号；区分介绍通信功能与添加私人联系方式。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-WEIBO",
+      "platform": "微博",
+      "direct_names": [
+        "微博"
+      ],
+      "alias_candidates": [],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "区分引用公开信息、使用经历与引导关注站外账号。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-BILIBILI",
+      "platform": "B站",
+      "direct_names": [
+        "B站",
+        "哔哩哔哩"
+      ],
+      "alias_candidates": [
+        "小破站"
+      ],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "称呼仅作为线索；需结合账号、搜索、观看后续等上下文。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-TAOBAO",
+      "platform": "淘宝",
+      "direct_names": [
+        "淘宝"
+      ],
+      "alias_candidates": [
+        "猫"
+      ],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "“猫”为高度歧义的单字，不做子串或动物语境命中；仅在购物、平台或账号上下文已明确时辅助识别。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-JD",
+      "platform": "京东",
+      "direct_names": [
+        "京东"
+      ],
+      "alias_candidates": [
+        "狗"
+      ],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "“狗”为高度歧义的单字，不做子串或动物语境命中；仅在购物、平台或账号上下文已明确时辅助识别。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-YOUTUBE",
+      "platform": "YouTube",
+      "direct_names": [
+        "YouTube"
+      ],
+      "alias_candidates": [],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "英文名称大小写可归一化识别，报告保留原文字形；用户未提供代称，不自行补造。"
+    },
+    {
+      "id": "XHS-AUTHOR-PLATFORM-TIKTOK",
+      "platform": "TikTok",
+      "direct_names": [
+        "TikTok"
+      ],
+      "alias_candidates": [],
+      "source_kind": "author_curated",
+      "source_note": "用户提供平台名称与代称，作者整理；不是官方禁词表，也不是已启用的用户禁令。",
+      "match_role": "context_clue_only",
+      "default_risk_level": null,
+      "conditions": "结合完整图文识别实际指代、跳转/关注/下载/交易/领取等行为以及发布场景；平台名本身不构成违规证据。",
+      "exclusions": [
+        "普通经历或来源引用",
+        "中性事实比较",
+        "否定或劝阻语境",
+        "代称实际指向动物、颜色、人物或其他对象"
+      ],
+      "note": "英文名称大小写可归一化识别，报告保留原文字形；用户未提供代称，不自行补造。"
+    }
+  ]
+}
